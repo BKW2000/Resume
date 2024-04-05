@@ -1,0 +1,117 @@
+\documentclass[letter,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{bibentry}
+\usepackage{natbib} 
+\usepackage{comment}
+
+%====================
+% OFFICIAL PUBLIC OVERLEAF TEMPLATE
+% https://www.overleaf.com/latex/templates/data-science-tech-resume-template/zcdmpfxrzjhv
+% 
+%====================
+%
+% Resume template for data scientists, a complement to data-science-tech-cover-letter-template:
+% https://www.overleaf.com/latex/templates/data-science-tech-cover-letter-template/gbrcqktbsfxf
+%
+% Files:        resume.tex: Main file
+%               _header.tex: header code
+%               TLCresume.sty: style file containing formatting details
+%               section/objective: https://www.indeed.com/career-advice/resumes-cover-letters/resume-objective-examples
+%               section/skills: table of skills
+%               section/experience: projects or roles
+%               section/education: schools and stuff
+%               section/activities: optional, could comment out in resume.tex.
+%
+% Editor:       https://github.com/TimmyChan 
+%               https://www.linkedin.com/in/timmy-l-chan/
+%               
+% Last Updated: March 24th, 2022
+%
+%====================
+\usepackage{BKWcv}
+
+%====================
+% CONTACT INFORMATION
+%====================
+\def\name{Brian K. Weikel} % Name Here
+\def\phone{(614) 495-6599}
+\def\city{Westerville, Ohio}
+\def\email{bkweikel@gmail.com}
+\def\LinkedIn{brian-k-weikel} % linkedin.com/in/______
+\def\github{BKW2000} % github username
+\def\role{} %JOB TITLE \def\role{Curriculum Vitae}
+
+\input{_header}
+
+\begin{document}
+\nobibliography{../Bibliography/list2}
+%bibliographystyle{unsrt}
+\bibliographystyle{apalike}
+
+% \input{sections/objective}
+
+\section{Education}
+\input{sections/education}
+
+\section{Professional Experience}
+\input{sections/experience}
+
+\newpage
+
+\section{Academic Experience}
+\input{sections/academic}
+
+\section{Teaching Experience}
+\input{sections/teaching}
+
+\section{Technical Reports}
+
+\begin{zitemize}
+
+\item \bibentry{burke2021}
+\vspace{0.2em}
+\item \bibentry{do2021}
+\vspace{0.2em}
+\item \bibentry{feiger2016}
+\vspace{0.2em}
+\item \bibentry{karaoglan2015}
+\vspace{0.2em}
+\item \bibentry{lokhandwala2022}
+\vspace{0.2em}
+\item \bibentry{mut2020}
+\vspace{0.2em}
+\item \bibentry{poortinga2018}
+\vspace{0.2em}
+\item \bibentry{saha2019b}
+\vspace{0.2em}
+\item \bibentry{weikel2021d}
+\vspace{0.2em}
+\item \bibentry{weikel2021a}
+\vspace{0.2em}
+\item \bibentry{weikel2021c}
+\vspace{0.2em}
+\item \bibentry{weikel2021b}
+\vspace{0.2em}
+\item \bibentry{weikel2022}
+\end{zitemize}
+
+\newpage
+
+\section{Talks}
+\input{sections/talks}
+
+\newpage
+
+\section{Skills}
+\input{sections/skills}
+
+\section{Professional Membership}
+\input{sections/activities}
+
+\section{Military Experience}
+\input{sections/military}
+
+\section{References}
+\input{sections/references}
+
+\end{document}
